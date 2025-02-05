@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form">
+            <!-- حقل إدخال النص -->
+            <input type="text" class="input" placeholder="Task To Do" />
+            
+            <!-- زر 📎 لرفع الصور والملفات -->
+            <label class="file-label">
+                <input type="file" class="file-input" accept="image/*, audio/*, application/pdf" hidden />
+                <i class="fas fa-paperclip"></i>
+            </label>
+
+            <!-- زر 🎤 لتسجيل الصوت -->
+            <i class="fas fa-microphone record-btn"></i>
+
+            <!-- زر إضافة المهمة -->
+            <input type="submit" class="add cbtn" value="Add Task" />
+        </div>
+
+        <div class="tasks"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body{
+    /* background-color: #d9de8d !important; */
+    background: linear-gradient(135deg, #769dc6, #d2e1e9); /* تدرج لوني */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 700px !important;
+    margin: 20px auto !important;
+  }
+  .form {
+    background-color: #769dc69e;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+  }
+  .input:focus {
+    outline: none;
+  }
+  .add {
+    border: none;
+    background-color: #6793c3;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .tasks {
+    background-color: #769dc69e;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 20px;
+    
+  }
+  .tasks .task {
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  .tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .tasks .task:hover {
+    background-color: #f7f7f7;
+  }
+  .tasks .task.done {
+    opacity: 0.5;
+  }
+  .tasks .task span {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  ul{
+    display: flex;
+    padding: 5px;
+    padding-left: 0 !important;
+  }
+
+.cl-bt{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 10px;
+  border: none;
+  opacity: 0.5;
+  list-style: none;
+  cursor: pointer;
+}
+.cl-bt:hover{
+  opacity: 1;
+}
+
+.active{
+  opacity: 1;
+}
+
+
+.task-image {
+  width: 100px;
+  height: auto;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.file-input {
+  display: none; /* إخفاء زر رفع الملفات */
+}
+
+.file-label {
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(41, 144, 228);
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.file-label:hover {
+  color: #769dc6;
+}
+
+.record-btn{
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: rgb(41, 144, 228);
+  transition: 0.5s;
+}
+
+.record-btn:hover{
+  color: #769dc6;
+}
+
